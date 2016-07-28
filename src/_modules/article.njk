@@ -1,0 +1,42 @@
+{% macro article(title, content, imageSrc, subtitle, buttonName, action, orientation='right') %}
+<article class="article_{{orientation}}">
+    {% if orientation == 'right' or orientation == 'center' %}
+        {{ imagePart(imageSrc) }}
+        {{ contentPart(title, subtitle, content, buttonName, action) }}
+    {% endif %}
+    {% if orientation == 'left' %}
+        {{ contentPart(title, subtitle, content, buttonName, action) }}
+        {{ imagePart(imageSrc) }}
+    {% endif %}
+    <div class="clearfix"></div>
+</article>
+{% endmacro %}
+
+{% macro imagePart(src) %}
+    <div class="col_2 col_2_v">
+        <div class="visuel">
+            <img src="/images/{{src}}" class="image queue-loading">
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro contentPart(title, subtitle, content, buttonName, action) %}
+     <div class="col_2 col_2_t">
+        <div class="box_content animate-v-c">
+            <div class="titre animate-v">
+                <h2>{{title}}</h2>
+                {% if subtitle %}
+                <h3>{{subtitle}}</h3>
+                {% endif %}
+            </div>
+            <div class="content animate-v">
+                <p>{{content}}</p>
+                {% if action and buttonName %}
+                <div class="action">
+                    <a href="{{action}}" class="btn" data-text="{{buttonName}}" title="">{{buttonName}}</a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}

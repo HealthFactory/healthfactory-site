@@ -1,0 +1,13 @@
+{
+  "generator-yeogurt": {
+    "config": {
+      "projectName": "Health Factory",
+      "htmlOption": "nunjucks",
+      "jsPreprocessor": "none",
+      "cssOption": "sass",
+      "sassSyntax": "scss",
+      "testFramework": "mocha"
+    },
+    "version": "1.5.3"
+  }
+}

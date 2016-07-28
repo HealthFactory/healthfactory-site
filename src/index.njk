@@ -1,0 +1,578 @@
+{% set class = 'home' %} 
+{% extends '_layouts/base.njk' %} 
+{% block content %} 
+
+<div id="main" class="page-layout" data-page="Home">
+
+    {% include '_modules/header-menu.njk' %} 
+
+    <section class="section-slideshow slideshow screen-height">
+
+        <div class="select-lang">
+            <ul>
+                <li class="active">fr</li>
+            </ul>
+        </div>
+
+        <div class="logo_slider">
+            <div class="logo_img"></div>
+            <div class="logo_txt">go beyond ideas</div>
+        </div>
+
+        <div class="mh mhl mh1"><span class="scrollto shuffle" data-target="concept">A Propos</span></div>
+        <div class="mh mhl mh2"><span class="scrollto shuffle" data-target="innovation">Innovation<br>& Expertise</span></div>
+        <div class="mh mhl mh3"><span class="scrollto shuffle" data-target="metho">Méthodologie</span></div>
+        <div class="mh mhr mh4"><span class="scrollto shuffle" data-target="offre">Pour vous</span></div>
+        <div class="mh mhr mh5"><span class="scrollto shuffle" data-target="equipe">L'équipe</span></div>
+        <div class="mh mhr mh6"><span class="scrollto shuffle" data-target="contact">Contact</span></div>
+
+        <div class="scroller">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="slideshow-inner">
+            <div class="slides">
+                <div class="slide is-active">
+                    <div class="slide-content">
+                        <div class="center-v-c">
+                            <div class="center-v animate-txt">
+                                <div class="title">L'INNOVATION EN SANTÉ</div>
+                                <div class="text">
+                                    <p>La santé est le domaine qui peut bénéficier le plus des nouvelles technologies pour le
+                                        bien de l'humanité. Healh Factory est l'acteur qui vous offre l'opportunité d'en
+                                        tirer parti au mieux.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container screen-height"> <img src="/images/slider_1.jpg" data-src="/images/slider_2.jpg" alt="" width="1920" height="1080" class="image queue-loading as-background"
+                            style="display: none;"></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="center-v-c">
+                            <div class="center-v animate-txt">
+                                <div class="title">L'INNOVATION PAR L'ACTION</div>
+                                <div class="text">
+                                    <p>Un processus d'innovation complet pour identifier les technologies, les hommes et les
+                                        nouveaux modèles économiques pour l'amélioration de la médecine et la prise en charge
+                                        des patients. Une approche méthodologique agile pour faire émerger des solutions
+                                        concrètes répondant à des problèmes précis remontés par les patients et professionnels
+                                        de santé.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container screen-height"> <img src="/images/slider_3.jpg" data-src="/images/slider_3.jpg" alt="" width="1920" height="1080" class="image queue-loading as-background"
+                            style="display: none;"></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="center-v-c">
+                            <div class="center-v animate-txt">
+                                <div class="title">ANIMER L'INNOVATION</div>
+                                <div class="text">
+                                    <p>Des évènements majeurs pour animer le processus d'innovation au quotidien sur l'année,
+                                        créer les liens entre les acteurs de la santé et ceux du numériques, accompagner
+                                        la réalisation de prototypes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container screen-height"> <img src="/images/slider_2.jpg" data-src="/images/slider_1.jpg" alt="" width="1920" height="1080" class="image queue-loading as-background"
+                            style="display: none;"></div>
+                </div>
+
+            </div>
+            <div class="pages">
+                <div class="page is-active"><span class="icon">1</span></div>
+                <div class="page"><span class="icon">2</span></div>
+                <div class="page"><span class="icon">3</span></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="concept" class="section">
+        <div class="center_page">
+
+            <div class="liste_articles">
+                <article class="article_right">
+                    <div class="col_2 col_2_v">
+                        <div class="visuel">
+                            <img src="/images/expertise-innovation-health.jpg" class="image queue-loading">
+                        </div>
+                    </div>
+                    <div class="col_2 col_2_t">
+                        <div class="box_content animate-v-c">
+                            <div class="titre animate-v">
+                                <h2>A Propos</h2>
+                                <h3>LEADER DE L'INNOVATION DANS LE SECTEUR DE LA SANTÉ</h3>
+                            </div>
+                            <div class="content animate-v">
+                                <p>Les expertises HEALTH FACTORY sont dédiées aux professionnels de la santé : big pharma, industriels
+                                    secteur santé, l'industrie des objets connectés, assureurs, hôpitaux, cliniques, établissements
+                                    de soins, professionels de la santé, startups dans l'univers médical. Notre vocation
+                                    est de vous aider à trouver de nouveaux modèles économiques et d'optimiser vos modèles
+                                    existants.
+                                </p>
+                                <div class="action">
+                                    <a href="mailto:hello@healthfactory.io" class="btn" data-text="En savoir plus" title="">En savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </article>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+
+    <section id="innovation" class="section">
+        <div class="center_page">
+            <div class="titre">
+                <h2>Innovation & Expertise</h2>
+                <h3>les 3 pilliers de l'innovation</h3>
+            </div>
+            <div class="content">
+                <div class="col_3">
+                    <div class="box_col box_innovation animate-v-c">
+                        <div class="visuel visuel_svg visuel_brain animate-v"></div>
+                        <h4 class="animate-v">Expérience<br>immersive</h4>
+                        </h4>
+                        <p class="animate-v">évènements et voyages apprenants pour acculturer acteurs de la santé au numérique et permettant aux
+                            acteurs du numérique de comprendre les enjeux de la santé</p>
+                    </div>
+                </div>
+                <div class="col_3 animate-v">
+                    <div class="box_col box_innovation animate-v-c">
+                        <div class="visuel visuel_svg visuel_hearth animate-v"></div>
+                        <h4 class="animate-v">Expertise santé<br>& numérique</h4>
+                        <p class="animate-v">offre de services pour réaliser et accompagner des projets innovants en santé avec les meilleurs
+                            experts du domaine de la santé et du numérique sur le plan technique, légal, médical, entrepreneurial
+                            et design</p>
+                    </div>
+                </div>
+                <div class="col_3 animate-v">
+                    <div class="box_col box_innovation animate-v-c">
+                        <div class="visuel visuel_svg visuel_sector animate-v"></div>
+                        <h4 class="animate-v">Expérimentation<br>sur le terrain</h4>
+                        <p class="animate-v">plateforme physique (unité de soins, officine, cabinet, patients, …) et numérique (jeux de données,
+                            services, API…) permettant de tester et valider des innovations en réel en partenariat avec les
+                            acteurs de la santé</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+
+    {% include '_modules/schema-methodology.njk' %}
+
+    <section id="offre" class="section">
+        <div class="center_page">
+            <div class="titre">
+                <h2>Pour vous</h2>
+                <h3>L'offre «INSIDERS»<br>est animé par des évènements</h3>
+            </div>
+
+            <div class="visuel_offre_mobile mobile">
+                <img src="/images/timeline-hf.png">
+            </div>
+            <div class="content content_scroll desktop">
+
+                <div class="content_offres">
+
+                    <div class="line line_l_1 line_l" data-delta="0" data-delta-end="0" data-first="1" data-end="2.5">
+                        <div class="label">
+                            <span>Ateliers</span>
+                            <div class="bulle"></div>
+                            <div class="bulle_line"></div>
+                        </div>
+                    </div>
+                    <div class="line line_l_2 line_l" data-delta="50" data-delta-end="0" data-first="1.5" data-end="3">
+                        <div class="label">
+                            <span>Conférences</span>
+                            <div class="bulle"></div>
+                            <div class="bulle_line"></div>
+                        </div>
+                    </div>
+                    <div class="line line_l_3 line_l" data-delta="100" data-delta-end="50" data-first="2" data-end="3.5">
+                        <div class="label">
+                            <span>Immersion</span>
+                            <div class="bulle"></div>
+                            <div class="bulle_line"></div>
+                        </div>
+                    </div>
+                    <div class="line line_l_4 line_l" data-delta="150" data-delta-end="0" data-first="2.5" data-end="3.5">
+                        <div class="label">
+                            <span>Hackathon</span>
+                            <div class="bulle"></div>
+                            <div class="bulle_line"></div>
+                        </div>
+                    </div>
+                    <div class="line line_l_5 line_l" data-delta="200" data-delta-end="50" data-first="3.5" data-end="7">
+                        <div class="label">
+                            <span>Expérimentation</span>
+                            <div class="bulle"></div>
+                            <div class="bulle_line"></div>
+                        </div>
+                    </div>
+                    <div class="line line_l_6 line_l" data-delta="250" data-delta-end="0" data-first="5.24" data-end="7">
+                        <div class="label">
+                            <span>Excubation</span>
+                            <div class="bulle"></div>
+                            <div class="bulle_line"></div>
+                        </div>
+                    </div>
+                    <div class="line line_l_7 line_l" data-delta="300" data-delta-end="0" data-first="7" data-end="8">
+                        <div class="label">
+                            <span>Transformation</span>
+                            <div class="bulle"></div>
+                            <div class="bulle_line"></div>
+                        </div>
+                    </div>
+                    <div class="line line_l_8 line_l" data-delta="0" data-delta-end="0" data-first="1.2" data-end="7.7" style="z-index: 0;">
+                        <div class="label">
+                            <span style="text-align: right;">HACKING<br>HEALTH<br>CAMP</span>
+                            <div class="bulle"></div>
+                            <div class="bulle_line"></div>
+                        </div>
+                    </div>
+
+                    <div class="line line_r_1 line_r" data-delta="0" data-delta-end="0" data-first="1.2" data-end="4">
+                        <div class="label">
+                            <span>Mentoring</span>
+                            <div class="bulle"></div>
+                            <div class="bulle_line"></div>
+                        </div>
+                    </div>
+                    <div class="line line_r_2 line_r" data-delta="50" data-delta-end="0" data-first="2.8" data-end="7.2">
+                        <div class="label">
+                            <span>Coaching</span>
+                            <div class="bulle"></div>
+                            <div class="bulle_line"></div>
+                        </div>
+                    </div>
+                    <div class="line line_r_3 line_r" data-delta="100" data-delta-end="0" data-first="4" data-end="8">
+                        <div class="label">
+                            <span>Marketing</span>
+                            <div class="bulle"></div>
+                            <div class="bulle_line"></div>
+                        </div>
+                    </div>
+                    <div class="line line_r_4 line_r" data-delta="0" data-delta-end="0" data-first="1.2" data-end="7.7" style="z-index: 0;">
+                        <div class="label">
+                            <span>DÉFIS SANTÉ<br>NUMÉRIQUE</span>
+                            <div class="bulle"></div>
+                            <div class="bulle_line"></div>
+                        </div>
+                    </div>
+
+                    <div class="liste_offres">
+
+                        <div id="box_1" class="box_offre_c">
+                            <div class="box_offre">Enjeux</div>
+                        </div>
+
+                        <div id="box_2" class="box_offre_c">
+
+                            <div class="box_offre">Opportunités</div>
+                        </div>
+
+                        <div id="box_3" class="box_offre_c">
+                            <div class="box_offre">Idéations</div>
+                        </div>
+
+                        <div id="box_4" class="box_offre_c">
+                            <div class="box_offre">Prototypage</div>
+                        </div>
+
+                        <div id="box_5" class="box_offre_c">
+                            <div class="box_offre">Tests</div>
+                        </div>
+
+                        <div id="box_6" class="box_offre_c">
+                            <div class="box_offre">Validation</div>
+                        </div>
+
+                        <div id="box_7" class="box_offre_c">
+                            <div class="box_offre">Commercialisation</div>
+                        </div>
+
+                        <div id="box_8" class="box_offre_c">
+                            <div class="box_offre box_offre_green">Exécution</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action" style="text-align: center; margin-top: 100px;">
+                    <a href="mailto:hello@healthfactory.io" class="btn" data-text="En savoir plus" title="">En savoir plus</a>
+                </div>
+            </div>
+    </section>
+
+
+
+    <section id="paralax" class="section-paralax">
+        <div class="center_page">
+            <div class="section-paralax-c animate-v-c">
+                <div class="paralax-background animate-v">
+                    <div class="image-container"><img src="/images/paralaxe_2.jpg" data-src="/images/paralaxe_2.jpg" alt="" width="1920" height="800"
+                            class="image queue-loading as-background" style="display: none;">
+                    </div>
+                </div>
+                <div class="paralax-content animate-v">
+                    <div class="center-v-c">
+                        <div class="center-v">
+                            <div class="titre">
+                                <h2>nos expertises<br>nos ressources<br>dédiées à l'innovation</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="equipe" class="section">
+        <div class="center_page">
+            <div class="titre">
+                <h2>L'équipe</h2>
+                <h3></h3>
+            </div>
+            <div class="content animate-v-c">
+                <div class="col_2 animate-v">
+                    <div class="box_col box_equipe">
+                        <div class="visuel">
+                            <img src="/images/sebastien-letelie.jpg" class="queue-loading as-background">
+                        </div>
+                        <h4>SÉBASTIEN LETÉLIÉ</h4>
+                        <h5>CEO</h5>
+                        <p>Développeur et entrepreneur, hacker professionnel dans la santé pour favoriser l'émergence d'innovation
+                            dans le domaine. Sébastien est dans la santé depuis plus de 10 ans où il a créé plusieurs logiciels
+                            innovants. Il intervient dans les conférences sur le futur de la sante et l'innovation. <br>Suivez-le
+                            sur <a href='http://twitter.com/sebmade' target='blank'>@sebmade</a></p>
+                    </div>
+                </div>
+                <div class="col_2 animate-v">
+                    <div class="box_col box_equipe">
+                        <div class="visuel">
+                            <img src="/images/franck-ohrel.jpg" class="queue-loading as-background">
+                        </div>
+                        <h4><img src="/images/vp.jpg" style="width: 160px;"></h4>
+                        <h5>VP</h5>
+                        <p>Serial entrepreneur et investisseur dans le secteur du numérique depuis plus de 17 ans, passionné
+                            d'innovation. <br>Suivez-le sur <a href='http://twitter.com/franckohrel' target='blank'>@FranckOhrel</a></p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <!--<div class="action">
+                <a href="#" class="btn" data-text="Voir toute l'équipe" title="Voir toute l'équipe"><span>Voir toute l'équipe</span></a>
+            </div>-->
+                <div class="clearfix"></div>
+            </div>
+            <div class="content animate-v-c">
+                <div class="col_2 animate-v">
+                    <div class="box_col box_equipe">
+                        <div class="visuel">
+                            <img src="/images/luc-sirois.jpg" class="queue-loading as-background">
+                        </div>
+                        <h4>LUC SIROIS</h4>
+                        <h5>ADVISER</h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col_2 animate-v">
+                    <div class="box_col box_equipe">
+                        <div class="visuel">
+                            <img src="/images/jacques-marescaux.jpg" class="queue-loading as-background">
+                        </div>
+                        <h4>JACQUES MARESCAUX</h4>
+                        <h5>MD / ADVISER</h5>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="content animate-v-c">
+                <div class="col_2 animate-v">
+                    <div class="box_col box_equipe">
+                        <div class="visuel">
+                            <img src="/images/frederic-grabli.jpg" class="queue-loading as-background">
+                        </div>
+                        <h4>FRÉDÉRIC GRABLI</h4>
+                        <h5>MD / ADVISER</h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col_2 animate-v">
+                    <div class="box_col box_equipe">
+                        <div class="visuel">
+                            <img src="/images/frederic-cambecedes.jpg" class="queue-loading as-background">
+                        </div>
+                        <h4>FRÉDÉRIC CAMBÉCÉDES</h4>
+                        <h5>HEAD OF SALES</h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <!--<div class="action">
+                <a href="#" class="btn" data-text="Voir toute l'équipe" title="Voir toute l'équipe"><span>Voir toute l'équipe</span></a>
+            </div>-->
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact_map" class="section">
+
+        <div class="center_page">
+            <div class="titre">
+                <h2>&nbsp;</h2>
+            </div>
+        </div>
+        <div id="map"></div>
+
+        <script>
+
+    function initialize() {
+
+        var map;
+        //var bounds = new google.maps.LatLngBounds();
+
+        var markers = [
+            ['Strasbourg', 48.57340529999999,7.752111300000024],
+            ['Montréal', 45.5016889,-73.56725599999999],
+            ['New-York', 40.7127837,-74.00594130000002]
+        ];
+
+        //map.fitBounds(bounds);
+
+        var map = document.getElementById('map');
+        var map = new google.maps.Map(map, {
+            center: {
+                lat:44.9763176,
+                lng:-32.1239327
+            },
+            zoom: 3,
+            disableDefaultUI: true,
+        });
+
+        map.setOptions({
+            draggable: false,
+            zoomControl: false,
+            scrollwheel: false,
+            disableDoubleClickZoom: true
+        });
+
+        for( i = 0; i < markers.length; i++ ) {
+            var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+            //bounds.extend(position);
+            marker = new google.maps.Marker({
+                position: position,
+                map: map,
+                icon: 'http://bm-studio.fr/hf2//images/marker.png',
+                title: markers[i][0]
+            });
+        }
+
+
+        /*for( i = 0; i < markers.length; i++ ) {
+            addMarker(markers[i])
+        }*/
+
+
+        map.set('styles', [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"},{"gamma":"1.00"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.country","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":"-100"},{"lightness":"30"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"gamma":"0.00"},{"lightness":"74"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#36393c"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"lightness":"3"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#4c4c4c"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#2f3134"},{"weight":"0.01"}]}]);
+    }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDq2L89c5GNfbf95yEZ-IIGz4ZfKI8uRf8&callback=initialize"></script>
+
+    </section>
+
+    <section id="contact" class="section">
+        <div class="center_page">
+            <div class="titre">
+                <h2>Contact</h2>
+                <h3></h3>
+            </div>
+            <div class="content">
+                <div class="col_2">
+                    <h4 class="contact">Où sommes-nous ?</h4>
+                    <p class="contact">Strasbourg |<span class="contact"> PH8, 8 place de l'hopital, 67000 Strasbourg, France</span></p>
+                    <p class="contact">Montréal |<span class="contact"> A-1514 AVE Docteur-Penfield, Montreal, Quebec, H3G 1B9, Canada</span></p>
+                    <p class="contact">New York |<span class="contact"> 32 W 131st street, New York, NY, 10037, USA</span></p>
+                    <h4 class="contact">Vous aimez notre vision, partagez-là</h4>
+                    <div id="fb-root"></div>
+                    <script>(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.7";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+                    <div class="fb-like" data-href="https://www.facebook.com/HealthFactoryIO" data-layout="button_count" data-action="like" data-size="small"
+                        data-show-faces="true" data-share="true"></div>
+                    <div class="fb-send" data-href="https://www.facebook.com/HealthFactoryIO" data-size="small" data-colorscheme="dark"></div>
+                    <br><br><br>
+                    <script>window.twttr = (function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0],
+                    t = window.twttr || {};
+                  if (d.getElementById(id)) return t;
+                  js = d.createElement(s);
+                  js.id = id;
+                  js.src = "https://platform.twitter.com/widgets.js";
+                  fjs.parentNode.insertBefore(js, fjs);
+
+                  t._e = [];
+                  t.ready = function(f) {
+                    t._e.push(f);
+                  };
+
+                  return t;
+                }(document, "script", "twitter-wjs"));</script>
+                    <a class="twitter-follow-button" href="https://twitter.com/_healthfactory">Follow @_healthfactory</a>
+                    <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Health%20Factory%20leader%20de%20l'innovation%20en%20santé">Partager</a>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col_2">
+                    <h4 class="contact">Nous contacter par email</h4>
+                    <p class="contact"><a href="mailto:hello@healthfactory.io">hello@healthfactory.io</a></p>
+                    <div class="clearfix"></div>
+
+                    <h4 class="contact">Suivez-nous et prenez part à l'innovation !</h4>
+                    <ul class="social">
+                        <li>
+                            <a href="https://www.facebook.com/HealthFactoryIO/" class="icon icon-facebook" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/_healthfactory" class="icon icon-twitter" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC3cp1CMc4tzNMuBaLvJOitw" class="icon icon-youtube" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="http://lnked.in/healthfactory" class="icon icon-linkedin" target="_blank"></a>
+                        </li>
+                    </ul>
+                    <br><br>
+                    <h4 class="contact">Avec le soutien de la French Tech MEDTECH / BIOTECH</h4>
+                    <a href="http://www.lafrenchtech-alsace.eu/" target="_blank"><img src="/images/french-tech-medtech.png" style="height: 200px;"></a>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+
+</div>
+{% endblock %}

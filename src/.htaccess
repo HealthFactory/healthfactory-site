@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+    RewriteBase / 
+
+    RewriteRule ^(en|de|es)/(images|scripts|styles)/ (.*)$  $2&%{query_STRING} [L]
+
+</IfModule>

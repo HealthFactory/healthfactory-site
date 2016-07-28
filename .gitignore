@@ -1,0 +1,8 @@
+node_modules
+*.log
+build
+.build
+tmp
+.tmp
+.grunt
+.DS_Store
