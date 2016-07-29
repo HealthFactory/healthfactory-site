@@ -4,6 +4,7 @@
   "dependencies": {
     "gsap": "^1.19.0",
     "jquery": "^2.2.4",
+    "load-google-maps-api": "0.0.2",
     "normalize.css": "~3.0.3",
     "scrollmagic": "^2.0.5"
   },

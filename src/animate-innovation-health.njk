@@ -1,0 +1,46 @@
+{% set class = 'page' %} 
+{% extends '_layouts/base.njk' %} 
+{% block content %} 
+
+<div id="main" class="page-layout" data-page="page">
+
+    {% include '_modules/header-menu.njk' %}
+
+    {% from '_modules/header-page.njk' import headerPage %}
+    {{ headerPage('ANIMER L\'INNOVATION', 'paralaxe_2.jpg') }}
+
+    {% from '_modules/page.njk' import page %}
+    <section id="pages" class="section section_{{color | default('grey')}}">
+        <div class="center_page">
+            {{ page('PARTICIPER À L\'INNOVATION EN SANTÉ', 'REJOIGNEZ LES DÉFIS SANTÉ NUMÉRIQUES', 'animate-innovation') }}
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <section id="articles-grid" class="section">
+        <div class="center_page">
+            <div class="titre">
+                <h2>CIBLER DES MARCHÉS</h2>
+                <h3>3 THÉMATIQUES</h3>
+            </div>
+            <div class="content animate-v-c">
+                <div class="liste_articles_grid_1 animate-v-c">
+                    {% from '_modules/article.njk' import articleGrid %}
+                    {{ articleGrid('PARCOURS DE SOINS', 'thematique1', 'visuel.jpg') }}
+                    {{ articleGrid('MALADIES CHRONIQUE', 'thematique2', 'visuel.jpg') }}
+                    {{ articleGrid('COORDINATION DES SOINS', 'thematique3', 'visuel.jpg') }}
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <section id="pages" class="section section_{{color | default('grey_low')}}">
+        <div class="center_page">
+            {{ page('VIVEZ UNE AVENTURE INOUBLIABLE', 'PARTICIPEZ AU<br>HACKING HEALTH CAMP', 'hacking-health-camp') }}
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+</div>
+{% endblock %}
