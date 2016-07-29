@@ -22,7 +22,7 @@
         <div class="mh mhl mh1"><span class="scrollto shuffle" data-target="concept">A Propos</span></div>
         <div class="mh mhl mh2"><span class="scrollto shuffle" data-target="innovation">Innovation<br>& Expertise</span></div>
         <div class="mh mhl mh3"><span class="scrollto shuffle" data-target="metho">Méthodologie</span></div>
-        <div class="mh mhr mh4"><span class="scrollto shuffle" data-target="offre">Pour vous</span></div>
+        <div class="mh mhr mh4"><span class="scrollto shuffle" data-target="offre">L'offre INSIDERS</span></div>
         <div class="mh mhr mh5"><span class="scrollto shuffle" data-target="equipe">L'équipe</span></div>
         <div class="mh mhr mh6"><span class="scrollto shuffle" data-target="contact">Contact</span></div>
 
@@ -329,6 +329,8 @@
             </div>
     </section>
 
+    {% include '_modules/customers.njk' %}
+
     <section id="paralax" class="section-paralax">
         <div class="center_page">
             <div class="section-paralax-c animate-v-c">
@@ -399,7 +401,7 @@
             marker = new google.maps.Marker({
                 position: position,
                 map: map,
-                icon: 'http://bm-studio.fr/hf2//images/marker.png',
+                icon: 'http://test.healthfactory.io/images/marker.png',
                 title: markers[i][0]
             });
         }

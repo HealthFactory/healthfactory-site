@@ -1,0 +1,30 @@
+{% from '_modules/logo.njk' import logo %}
+<section id="partenaires" class="section">
+    <div class="center_page">
+        {% if class == 'home' %}
+        <div class="titre">
+            <h2></h2>
+            <h3>Ils nous font confiance</h3>
+        </div>
+        {% endif %}
+        <div class="content content_logo_part animate-v-c">
+            {{ logo('customers/ge-healthcare.jpg') }}
+            {{ logo('customers/sanofi.jpg') }}
+            {{ logo('customers/roche.png') }}
+            <div class="clearfix"></div>
+        </div>
+        <div class="content content_logo_part animate-v-c">
+            {{ logo('customers/ihealth.png') }}
+            {{ logo('customers/allianz.jpg') }}
+            {{ logo('customers/medtronic.jpg') }}
+            <div class="clearfix"></div>
+        </div>
+        <div class="content content_logo_part animate-v-c">
+            {{ logo('customers/servier.png') }}
+            {{ logo('customers/humanis.png') }}
+            {{ logo('customers/doctissimo.jpg', 40) }}
+            <div class="clearfix"></div>
+        </div>
+        </div>
+    </div>
+</section>    

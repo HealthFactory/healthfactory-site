@@ -26,6 +26,12 @@
             {{ teamMember('LUC SIROIS', 'luc-sirois.jpg', 'ADVISER', null, 3) }}
             {{ teamMember('FRÉDÉRIC GRABLI', 'frederic-grabli.jpg', 'MD / ADVISER', null, 3) }}
             <div class="clearfix"></div>
+            {% if class == 'home' %}
+            <div class="action">
+                <a href="team.html" class="btn" data-text="{{'Voir toute l\'équipe' | i18n('voir-equipe')}}" title="{{'Voir toute l\'équipe' | i18n('voir-equipe')}}"><span>{{'Voir toute l\'équipe' | i18n('voir-equipe')}}</span></a>
+            </div>
+            <div class="clearfix"></div>
+            {% endif %}
         </div>
         {% if class == 'page' %}
         <div class="content animate-v-c">

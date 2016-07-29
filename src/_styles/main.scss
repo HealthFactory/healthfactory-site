@@ -888,15 +888,20 @@ color:#FFF;
     line-height: 26px;
 }
 
-.box_equipe .visuel {
-    overflow: hidden;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 140px;
-    margin: 0px auto 40px auto;
-    height: 140px;
+.box_equipe {
+    .visuel {
+        overflow: hidden;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 140px;
+        margin: 0px auto 40px auto;
+        height: 140px;
+        img {
+            filter: grayscale(100%);
+        }
+    }
 }
 
 .section {
