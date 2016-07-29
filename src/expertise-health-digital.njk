@@ -1,0 +1,20 @@
+{% set class = 'page' %} 
+{% extends '_layouts/base.njk' %} 
+{% block content %} 
+<div id="main" class="page-layout" data-page="page">
+
+    {% include '_modules/header-menu.njk' %}
+
+    {% from '_modules/header-page.njk' import headerPage %}
+    {{ headerPage('EXPERTISE SANTÉ ET NUMÉRIQUE', 'paralaxe_2.jpg') }}
+
+    <section id="pages" class="section section_{{color | default('grey')}}">
+        <div class="center_page">
+            {% from '_modules/page.njk' import page %}
+            {{ page('immerger', null, 'expertise-sante-numerique') }}
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+</div>
+{% endblock %}

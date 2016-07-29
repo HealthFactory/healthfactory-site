@@ -1,0 +1,50 @@
+{% set class = 'page' %} 
+{% extends '_layouts/base.njk' %} 
+{% block content %} 
+
+<div id="main" class="page-layout" data-page="page">
+
+    {% include '_modules/header-menu.njk' %}
+
+    {% from '_modules/header-page.njk' import headerPage %}
+    {{ headerPage('DES SERVICES DÉDIÉS À L\'INNOVATION', 'paralaxe_2.jpg') }}
+
+    <section id="articles" class="section">
+        <div class="center_page">
+
+            <div class="liste_articles">
+
+                {% from '_modules/article.njk' import article %} 
+
+                {{ article('ATELIER', 'atelier', 'visuel.jpg', null, 'Voir nos ateliers', 'workshop-innovation-health.html') }}
+
+                {{ article('CONFÉRENCES', 'conferences', 'visuel.jpg', null, 'Voir nos conférences', 'conferences-innovation-health.html', 'left') }}
+
+                {{ article('IMMERSION', 'immersion', 'visuel.jpg', null, 'Voir nos immersions', 'immersive-experience.html') }}
+
+                {{ article('EXPÉRIMENTATION', 'experimentation', 'visuel.jpg', null, 'Voir nos expérimentations', 'experimentation-innovation-health.html', 'left') }}
+
+                {{ article('HACKATHON', 'hackathon', 'visuel.jpg', null, 'Voir nos hackathons', 'hackathon-innovation-health.html') }}
+
+                {{ article('EXCUBATION', 'excubation', 'visuel.jpg', null, 'Voir nos excubations', 'excubation-innovation-health.html', 'left') }}
+
+                {{ article('TRANSFORMATION', 'transformation', 'visuel.jpg', null, null, null) }}
+
+                {{ article('STARTUPS SEEKER', 'startups-seeker', 'visuel.jpg', null, 'Voir nos excubations', 'excubation-innovation-health.html', 'left') }}
+
+                {{ article('GESTION DE L\'INNOVATION', 'gestion-innovation', 'visuel.jpg', null, null, null) }}
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <section id="pages" class="section section_<?php echo $color; ?>">
+        <div class="center_page">
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+</div>
+{% endblock %}

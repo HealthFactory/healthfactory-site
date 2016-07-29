@@ -71,6 +71,8 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
           searchPaths: [path.join(dirs.source)],
           setUp: function(env) {
             env.addExtension('I18nExtension', new I18nExtension({
+              // TODO : bug dans nunjucks-i18n, locale est pas repris dans this.ctx quand on est dans une macro 
+              locale: lang,
               env: env,
               translations: langConfig
             }));
@@ -96,8 +98,8 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
     };
 
     Promise.all([
-      generate('fr', {fr: require('../lang/fr.json')}, dest+''),
-      generate('en', {en: require('../lang/en.json')}, dest+'/en/')
+      generate('fr', {fr: require('../.lang/fr.json')}, dest+''),
+      generate('en', {en: require('../.lang/en.json')}, dest+'/en/')
     ]).then(function() {
       browserSync.reload;
     });

@@ -1,0 +1,14 @@
+{% set class = 'page' %} 
+{% extends '_layouts/base.njk' %} 
+{% block content %} 
+<div id="main" class="page-layout" data-page="page">
+
+    {% include '_modules/header-menu.njk' %}
+
+    {% from '_modules/header-page.njk' import headerPage %}
+    {{ headerPage('UNE ÉQUIPE D\'EXPERTS À VOTRE SERVICE', 'paralaxe_2.jpg') }}
+
+    {% include '_modules/team.njk' %}
+
+</div>
+{% endblock %}

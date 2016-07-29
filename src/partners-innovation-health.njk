@@ -1,0 +1,62 @@
+{% set class = 'page' %} 
+{% extends '_layouts/base.njk' %} 
+{% block content %} 
+<div id="main" class="page-layout" data-page="page">
+
+    {% include '_modules/header-menu.njk' %}
+
+    {% from '_modules/header-page.njk' import headerPage %}
+    {{ headerPage('ILS NOUS FONT CONFIANCE', 'paralaxe_2.jpg') }}
+
+
+<section id="partenaires" class="section">
+    <div class="center_page">
+        <div class="content content_logo_part animate-v-c">
+
+            <div class="logo_part animate-v">
+                <div class="box_col">
+                    <div class="visuel">
+                        <img src="/images/logo_maine-medical.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo_part animate-v">
+                <div class="box_col">
+                    <div class="visuel">
+                        <img src="/images/logo_navilyst-medical.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo_part animate-v">
+                <div class="box_col">
+                    <div class="visuel">
+                        <img src="/images/logo_centro-medical.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo_part animate-v">
+                <div class="box_col">
+                    <div class="visuel">
+                        <img src="/images/logo_pharmix.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo_part animate-v">
+                <div class="box_col">
+                    <div class="visuel">
+                        <img src="/images/logo_company.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>    
+
+</div>
+{% endblock %}

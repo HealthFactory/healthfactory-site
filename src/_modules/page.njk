@@ -1,0 +1,24 @@
+{% macro page(title, subtitle, content, buttonName, action) %}
+<article class="page">
+    <div class="col_2">
+        <div class="box_content animate-v-c">
+            <div class="titre animate-v">
+                {% if title %}
+                <h2>{{title | i18n(title)}}</h2>
+                {% endif %}
+                {% if subtitle %}
+                <h3>{{subtitle | i18n(subtitle)}}</h3>
+                {% endif %}
+            </div>
+            <div class="content animate-v">
+                {{content | i18n(content)}}
+                {% if action and buttonName %}
+                <div class="action">
+                    <a href="{{action}}" class="btn" data-text="{{buttonName | i18n(buttonName)}}" title="">{{buttonName | i18n(buttonName)}}</a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</article>
+{% endmacro %}

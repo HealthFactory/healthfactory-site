@@ -15,7 +15,7 @@ module.exports = function (gulp, plugins, args, config, taskTarget, browserSync)
   gulp.task('deploy', function () {
     return gulp.src(path.join(taskTarget, '**/*'))
       .pipe(changed('.'+taskTarget))
-      .pipe(gulp.dest('.'.taskTarget))
+      .pipe(gulp.dest('.'+taskTarget))
       .pipe(sftp({
         host: 'sftp.dc0.gpaas.net',
         user: user,

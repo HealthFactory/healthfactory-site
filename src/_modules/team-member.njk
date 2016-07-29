@@ -1,0 +1,12 @@
+{% macro teamMember(name, imageSrc, title, description, col=2) %}
+<div class="col_{{col}} animate-v">
+    <div class="box_col box_equipe">
+        <div class="visuel">
+            <img src="/images/{{imageSrc}}" class="queue-loading as-background">
+        </div>
+        <h4>{{name}}</h4>
+        <h5>{{title | i18n(title)}}</h5>
+        <p>{{description | i18n(description)}}</p>
+    </div>
+</div>
+{% endmacro %}

@@ -4,5 +4,6 @@ build
 .build
 tmp
 .tmp
+.lang
 .grunt
 .DS_Store

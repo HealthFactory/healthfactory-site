@@ -1,0 +1,51 @@
+{% from '_modules/team-member.njk' import teamMember %}
+<section id="equipe" class="section">
+    <div class="center_page">
+        {% if class == 'home' %}
+        <div class="titre">
+            <h2>{{'L\'équipe' | i18n('equipe')}}</h2>
+            <h3></h3>
+        </div>
+        {% endif %}
+        <div class="content animate-v-c">
+            {{ teamMember('SÉBASTIEN LETÉLIÉ', 'sebastien-letelie.jpg', 'CEO', 'sebastien-letelie') }}
+            <div class="col_2 animate-v">
+                <div class="box_col box_equipe">
+                    <div class="visuel">
+                        <img src="/images/franck-ohrel.jpg" class="queue-loading as-background">
+                    </div>
+                    <h4><img src="/images/vp.jpg" style="width: 160px;"></h4>
+                    <h5>VP</h5>
+                    <p>{{'franck-ohrel' | i18n('franck-ohrel')}}</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="content animate-v-c">
+            {{ teamMember('JACQUES MARESCAUX', 'jacques-marescaux.jpg', 'MD / ADVISER', null, 3) }}
+            {{ teamMember('LUC SIROIS', 'luc-sirois.jpg', 'ADVISER', null, 3) }}
+            {{ teamMember('FRÉDÉRIC GRABLI', 'frederic-grabli.jpg', 'MD / ADVISER', null, 3) }}
+            <div class="clearfix"></div>
+        </div>
+        {% if class == 'page' %}
+        <div class="content animate-v-c">
+            {{ teamMember('FRÉDÉRIC CAMBÉCÉDES', 'frederic-cambecedes.jpg', 'HEAD OF SALES', null, 3) }}
+            {{ teamMember('ANNA FERRERE', 'anna-ferrere.jpg', 'MANAGER', null, 3) }}
+            {{ teamMember('CHRISTELLE CARRIER', 'christelle-carrier.jpg', 'SENIOR DESIGNER', null, 3) }}
+            <div class="clearfix"></div>
+        </div>
+        <div class="content animate-v-c">
+            {{ teamMember('BARBARA BAY', 'barbara-bay.jpg', 'SENIOR DESIGNER', null, 3) }}
+            {{ teamMember('ANNE-LAURE DESFLACHES', 'anne-laure-desflaches.jpg', 'DESIGNER', null, 3) }}
+            {{ teamMember('DAYM BEN-HAMIDI', 'daym-ben-hamidi.jpg', 'DESIGNER', null, 3) }}
+            <div class="clearfix"></div>
+        </div>
+        <div class="content animate-v-c">
+            {{ teamMember('MATTHIEU ROBERT', 'matthieu-robert.jpg', 'DESIGNER MEDICAL DEVICES', null, 3) }}
+            {{ teamMember('FLORIAN PETIT', 'florian-petit.jpg', 'TECH LEAD', null, 3) }}
+            {{ teamMember('CYRIL RAYOT', 'cyril-rayot.jpg', 'SENIOR DEVELOPER', null, 3) }}
+            <div class="clearfix"></div>
+        </div>
+        {% endif %}
+    </div>
+</section>

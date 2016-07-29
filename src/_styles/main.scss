@@ -792,6 +792,15 @@ color:#FFF;
 
 /* PARTENAIRES */
 
+.logo_part {
+    text-align: center;
+    padding: 20px 10px;
+    img {
+        height: 100px; 
+        filter: grayscale(100%)
+    }
+}
+
 .content_logo_part {
     display: flex;
     justify-content:space-between;

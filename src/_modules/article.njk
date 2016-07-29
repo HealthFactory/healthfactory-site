@@ -24,16 +24,16 @@
      <div class="col_2 col_2_t">
         <div class="box_content animate-v-c">
             <div class="titre animate-v">
-                <h2>{{title}}</h2>
+                <h2>{{title | i18n(title)}}</h2>
                 {% if subtitle %}
-                <h3>{{subtitle}}</h3>
+                <h3>{{subtitle | i18n(subtitle)}}</h3>
                 {% endif %}
             </div>
             <div class="content animate-v">
-                <p>{{content}}</p>
+                <p>{{content | i18n(content)}}</p>
                 {% if action and buttonName %}
                 <div class="action">
-                    <a href="{{action}}" class="btn" data-text="{{buttonName}}" title="">{{buttonName}}</a>
+                    <a href="{{action}}" class="btn" data-text="{{buttonName}}" title="">{{buttonName | i18n(buttonName)}}</a>
                 </div>
                 {% endif %}
             </div>
