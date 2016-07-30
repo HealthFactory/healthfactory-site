@@ -11,7 +11,7 @@
                 {% endif %}
             </div>
             <div class="content animate-v">
-                {{content | i18n(content)}}
+                <p>{{content | i18n(content)}}</p>
                 {% if action and buttonName %}
                 <div class="action">
                     <a href="{{action}}" class="btn" data-text="{{buttonName | i18n(buttonName)}}" title="">{{buttonName | i18n(buttonName)}}</a>

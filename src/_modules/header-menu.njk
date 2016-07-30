@@ -1,18 +1,26 @@
+{% macro menu(title, anchorName) %}
+{% if class == 'home' %}
+<li><span class="scrollto" data-target="{{anchorName}}" title="">{{title | i18n(title)}}</span></li>
+{% else %}
+<li><a href="/#{{anchorName}}">{{title | i18n(title)}}</a></li>
+{% endif %}
+{% endmacro %}
+
 <header class="site-head">
     <div class="center_page">
-        <h1 id="logo"><a href="/" title="">Health Factory</a></h1>
+        <h1 id="logo"><a href="/" title="Health Factory">Health Factory</a></h1>
         <div class="menu_burger">
             <span></span>
         </div>
         <div class="nav-header-c">
             <nav class="nav-header">
                 <ul>
-                    <li><span class="scrollto" data-target="concept" title="">A Propos</span></li>
-                    <li><span class="scrollto" data-target="innovation" title="">Innovation & Expertise</span></li>
-                    <li><span class="scrollto" data-target="metho" title="">Méthodologie</span></li>
-                    <li><span class="scrollto" data-target="offre" title="">L'offre INSIDERS</span></li>
-                    <li><span class="scrollto" data-target="equipe" title="">L'équipe</span></li>
-                    <li><span class="scrollto" data-target="contact" title="">Contact</span></li>
+                    {{ menu('A propos', 'concept') }}
+                    {{ menu('Innovation & expertise', 'innovation') }}
+                    {{ menu('Méthodologie', 'metho') }}
+                    {{ menu('L\'offre INSIDERS', 'offre') }}
+                    {{ menu('L\'équipe', 'equipe') }}
+                    {{ menu('Contact', 'contact') }}
                 </ul>
             </nav>
 
