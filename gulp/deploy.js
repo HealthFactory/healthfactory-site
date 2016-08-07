@@ -2,6 +2,7 @@
 
 var sftp = require('gulp-sftp');
 var changed = require('gulp-changed');
+var ghPages = require('gulp-gh-pages');
 var path = require('path');
 
 module.exports = function (gulp, plugins, args, config, taskTarget, browserSync) {
@@ -13,14 +14,15 @@ module.exports = function (gulp, plugins, args, config, taskTarget, browserSync)
   var vhost = args.production ? 'healthfactory.io' : 'test.healthfactory.io';
 
   gulp.task('deploy', function () {
-    return gulp.src(path.join(taskTarget, '**/*'))
-      .pipe(changed('.'+taskTarget))
-      .pipe(gulp.dest('.'+taskTarget))
+    return gulp.src([path.join(taskTarget, '**/*'), '!'+path.join(taskTarget, 'data/')])
+      .pipe(ghPages())
+      .pipe(gulp.src(taskTarget+'/data/*'))
+      .pipe(gulp.changed('.'+taskTarget+'/data/*'))
       .pipe(sftp({
         host: 'sftp.dc0.gpaas.net',
         user: user,
         key: sshKey,
-        remotePath: 'vhosts/' + vhost + '/htdocs'
+        remotePath: 'vhosts/' + vhost + '/htdocs/data'
       }));
   });
 

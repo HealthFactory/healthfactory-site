@@ -38,7 +38,10 @@
   <meta name="description" content="{{shareTitle | i18n('siteDescription')}}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="apple-touch-icon" href="/health-factory.png">
-  <link rel="stylesheet" href="{{baseUrl}}styles/main.css" /> {% block stylesheets %}{% endblock %}
+  <link rel="stylesheet" href="{{baseUrl}}styles/main.css" /> 
+  
+  {% block stylesheets %}
+  {% endblock %}
 
 </head>
 
@@ -72,6 +75,7 @@
   <script src="{{baseUrl}}scripts/main.js"></script> 
   {% block scripts %}{% endblock %}
 
+
 {% if production %}
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
   <script>
@@ -82,6 +86,21 @@
   ga('create', 'UA-1873186-2', 'auto');
   ga('send', 'pageview');
   </script>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '1757038461240485');
+  fbq('track', "PageView");</script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1757038461240485&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
 
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">

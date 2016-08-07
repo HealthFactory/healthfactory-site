@@ -7,3 +7,4 @@ tmp
 .lang
 .grunt
 .DS_Store
+src/data
