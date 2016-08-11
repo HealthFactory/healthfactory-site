@@ -1,6 +1,6 @@
 User-agent: *
-Disallow: /
 Disallow: /data/
 Disallow: /fonts/
 Disallow: /styles/
 Disallow: /scripts/
+?

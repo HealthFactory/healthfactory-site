@@ -930,6 +930,16 @@ color:#FFF;
 
 #contact_map.section {
     padding:0px;
+    margin: 0px;
+    height: 770px;
+    background: url('/images/health-factory-locations.jpg') no-repeat center;
+    background-size: cover;
+    .center_page {
+        position: absolute;
+        top: 120px;
+        right: 0;
+        left: 0;
+    }
 }
 
 
@@ -945,13 +955,6 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 }
 .gmnoprint div {
     background:none !important;
-}
-
-#contact_map.section .center_page{
-    position: absolute;
-    top: 120px;
-    right: 0;
-    left: 0;
 }
 
 .section .titre {
@@ -1568,6 +1571,10 @@ footer ul li a {
 
 @media only screen and (max-width: 750px) {
 
+    #contact_map.section {
+        height: 350px;
+    }
+
     .mobile {
         display: block;
     }
@@ -1641,6 +1648,10 @@ footer ul li a {
 .section {
     padding: 75px 0px;
 }
+
+    .box_col {
+        padding: 0;
+    }
 
     .box_content {
         padding: 0px 0px 0px 0px !important;
