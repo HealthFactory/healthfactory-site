@@ -14,11 +14,9 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
         path.join(dirs.source, dirs.modules, '**/*.{scss,sass}')
       ], ['sass']);
 
-      // lang
-      gulp.watch(['lang/*.json', 'lang/*/*.md'], ['lang']);
-
      // Nunjucks Templates
       gulp.watch([
+        'lang/*.json', 'lang/**/*.md',
         path.join(dirs.source, '**/*.njk'),
         path.join(dirs.source, dirs.data, '**/*.{json,yaml,yml}')
       ], ['nunjucks']);

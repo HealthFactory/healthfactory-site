@@ -11,23 +11,34 @@
 
     {% include '_modules/schema-methodology.njk' %}
 
-    <section id="articles" class="section">
-        <div class="center_page">
+    {% from '_modules/article.njk' import articleGrid2 %} 
+    {% from '_modules/article.njk' import article %} 
+<section id="articles-grid" class="section">
+    <div class="center_page">
+        <div class="content animate-v-c">
+	        <div class="liste_articles_grid_2 animate-v-c">
 
+                {{ articleGrid2('RECHERCHE', 'recherche', 'visuel.jpg') }}
+
+                {{ articleGrid2('VALIDATION', 'validation', 'visuel.jpg') }}
+
+	        </div>
+	    </div>
+        <div class="content animate-v-c">
+	        <div class="liste_articles_grid_2 animate-v-c">
+
+                {{ articleGrid2('CRÉATION', 'creation', 'visuel.jpg') }}
+
+                {{ articleGrid2('EXECUTION', 'execution', 'visuel.jpg') }}
+
+	        </div>
+	    </div>
+        <div class="clearfix"></div>
             <div class="liste_articles">
+                {{ article('ITÉRATION', 'iteration', 'visuel.jpg') }}
 
-                {% from '_modules/article.njk' import article %} 
-
-                {{ article('RECHERCHE', 'recherche', 'visuel.jpg') }}
-
-                {{ article('VALIDATION', 'validation', 'visuel.jpg', null, null, null, 'left') }}
-                
-                {{ article('CRÉATION', 'creation', 'visuel.jpg') }}
-
-                {{ article('EXECUTION', 'execution', 'visuel.jpg', null, null, null, 'left') }}
-
+                {{ article('OBJECTIF', 'objectif', 'visuel.jpg', null, null, null, 'left') }}
             </div>
-
             <div class="clearfix"></div>
         </div>
     </section>

@@ -14,7 +14,7 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
   var dataPath = path.join(dirs.source, dirs.data);
 
   // Nunjucks template compile
-  gulp.task('nunjucks', function() {
+  gulp.task('nunjucks', ['lang'], function() {
     var siteData = {};
     if (fs.existsSync(dataPath)) {
       // Convert directory to JS Object
@@ -86,22 +86,24 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
         .on('error', plugins.notify.onError(config.defaultNotification))
         .on('error', reject)
         .pipe(plugins.htmlmin({
+          collapseWhitespace: true,
           collapseBooleanAttributes: true,
           conservativeCollapse: true,
-          removeCommentsFromCDATA: true,
+          removeComments: true,
           removeEmptyAttributes: true,
           removeRedundantAttributes: true
         }))
         .pipe(gulp.dest(langDest))
+        //.pipe(browserSync.reload({stream: true, once: true}))
         .on('end', resolve);
       })
     };
 
     Promise.all([
-      generate('fr', {fr: require('../.lang/fr.json')}, dest+''),
-      generate('en', {en: require('../.lang/en.json')}, dest+'/en/')
+      generate('fr', {fr: JSON.parse(fs.readFileSync('.lang/fr.json', 'utf8'))}, dest),
+      generate('en', {en: JSON.parse(fs.readFileSync('.lang/en.json', 'utf8'))}, dest+'/en/')
     ]).then(function() {
-      browserSync.reload;
+      browserSync.reload();
     });
   });
 };

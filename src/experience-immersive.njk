@@ -6,13 +6,25 @@
     {% include '_modules/header-menu.njk' %}
 
     {% from '_modules/header-page.njk' import headerPage %}
-    {{ headerPage('LES EXPÉRIENCES IMMERSIVES', 'paralaxe_2.jpg') }}
+    {{ headerPage('EXPÉRIENCES IMMERSIVES', 'paralaxe_2.jpg') }}
 
-    <section id="pages" class="section section_{{color | default('grey')}}">
+    <section id="pages" class="section section_grey">
         <div class="center_page">
             {% from '_modules/page.njk' import page %}
             {{ page('immerger', null, 'experience-immersive') }}
             <div class="clearfix"></div>
+        </div>
+    </section>
+
+   {% from '_modules/round.njk' import round %}
+    <section id="rounds" class="section">
+    <div class="center_page">
+        <div class="liste_rounds animate-v-c">
+            {{ round('observer', 'immersive-experience-observe', 'visuel.jpg') }}
+            {{ round('apprendre et comprendre', 'immersive-experience-learn', 'visuel.jpg', null, null, null, 'left') }}
+            {{ round('voyager', 'immersive-experience-trip', 'visuel.jpg') }}
+        </div>
+        <div class="clearfix"></div>
         </div>
     </section>
 

@@ -1,0 +1,3 @@
+### Les immersions ont 2 objectifs qui permettent à chacun des acteurs **professionnels de la santé** d'un coté et du **numérique** de l'autre de collaborer et de trouver **ensemble** des solutions aux problèmes majeurs de la santé :
+ - comprendre les enjeux de la santé à travers des observations sur le terrain au coeur des activités des patients et des professionnels de santé
+ - maitriser les technologies numériques à travers des collaborations sur des projets pour mettre en oeuvre une solution à un problème

@@ -1,0 +1,3 @@
+ - au delà du premier prototype l’excubation offre un moyen efficace de mener le projet à bien avec une suite d’itérations courte pour tester le marché et obtenir une adéquation produit marché
+ - le principe consiste à mettre en place une démarche en dehors des processus existants de l’entreprise tout en gardant un lien fort avec l’existant de l’entreprise pour préparer la transformation digitale
+ - à l’identique d’une startup qui doit rendre des comptes à ses investisseurs, l’excubation déroule un processus de validation du ROI de manière itérative auprès du top management pour les impliquer et obtenir les moyens nécessaires de faire aboutir le projet

@@ -1,0 +1,33 @@
+{% set class = 'page' %} 
+{% extends '_layouts/base.njk' %} 
+{% block content %} 
+
+<div id="main" class="page-layout" data-page="page">
+
+    {% include '_modules/header-menu.njk' %}
+
+    {% from '_modules/header-page.njk' import headerPage %}
+    {{ headerPage('CONFÉRENCES', 'paralaxe_2.jpg') }}
+
+    {% from '_modules/page.njk' import page %}
+    <section id="pages" class="section section_{{color | default('grey')}}">
+        <div class="center_page">
+            {{ page(null, null, 'conference-description', 'programmer ma conférence', 'mailto:hello@healthfactory.io') }}
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+
+    {% from '_modules/article.njk' import article %} 
+    <section id="articles" class="section">
+        <div class="center_page">
+            <div class="liste_articles">
+                {{ article('Conférences dédiées', 'conference-service', 'visuel.jpg', null, null, null, 'center') }}
+                {{ article('Les plus grand mentors', 'conference-hhc', 'visuel.jpg', null, null, null, 'center') }}
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+</div>
+{% endblock %}

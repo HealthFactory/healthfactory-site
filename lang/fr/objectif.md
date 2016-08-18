@@ -1,0 +1,3 @@
+ - chaque fin d'itération définie le contenu de la suivante au regard des résultats obtenus
+ - les itération s'arrêtent dès lors qu'une adéquation entre produit et marché est trouvée
+ - la validation de l'adéquation entre produit et marché s'appuie sur des métriques et une recherche permanente de la satisfaction client

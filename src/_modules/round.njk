@@ -1,0 +1,46 @@
+{% macro round(title, content, imageSrc, subtitle, buttonName, action, orientation='right') %}
+<article class="round round_{{orientation}} animate-v">
+  {% if orientation == 'right' or orientation == 'center' %} 
+    {{ imagePart(imageSrc) }} 
+    {{ contentPart(title, subtitle, content, buttonName, action) }} 
+  {% endif %} 
+  {% if orientation == 'left' %} 
+    {{ contentPart(title, subtitle, content, buttonName, action) }} 
+    {{ imagePart(imageSrc) }} 
+  {% endif %}
+  <div class="clearfix"></div>
+</article>
+{% endmacro %} 
+
+{% macro imagePart(src) %}
+<div class="col_3 col_3_v">
+  <div class="visuel_round">
+    <img src="/images/{{src}}" class="image queue-loading as-background">
+  </div>
+</div>
+{% endmacro %} 
+
+{% macro contentPart(title, subtitle, content, buttonName, action) %}
+<div class="col_3">
+  <div class="box_content">
+    <div class="center-v-c">
+      <div class="center-v">
+        <div class="titre">
+          <h3>{{title | i18n(title)}}</h3> 
+          {% if subtitle %}
+          <h4>{{subtitle | i18n(subtitle)}}</h4> 
+          {% endif %}
+        </div>
+        <div class="content">
+          <p>{{content | i18n(content)}}</p>
+          {% if action and buttonName %}
+          <div class="action">
+            <a href="{{action}}" class="btn" data-text="{{buttonName}}" title="">{{buttonName | i18n(buttonName)}}</a>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endmacro %} 

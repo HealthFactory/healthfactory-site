@@ -9,7 +9,7 @@ module.exports = function (gulp, plugins, args, config, taskTarget, browserSync)
 
   var user = '4249580';
   var sshKey = '/Users/sebmade/.ssh/hhgandi_rsa';
-  var vhost = args.production ? 'healthfactory.io' : 'test.healthfactory.io';
+  var vhost = args.principal ? 'healthfactory.io' : 'test.healthfactory.io';
 
   gulp.task('deploy', function() {
     return gulp.start('sftp');
@@ -31,8 +31,8 @@ module.exports = function (gulp, plugins, args, config, taskTarget, browserSync)
   });
 
   gulp.task('sftp', function () {
-    return gulp.src(path.join(taskTarget,'/**'))
-      .pipe(plugins.changed('.'+taskTarget))
+    return gulp.src([path.join(taskTarget,'/**'), path.join(taskTarget, '\.DS_Store')], {dot: true})
+      .pipe(plugins.changed('.'+taskTarget, {hasChanged: plugins.changed.compareSha1Digest}))
       .pipe(gulp.dest('.'+taskTarget))
       .pipe(plugins.sftp({
         host: 'sftp.dc0.gpaas.net',

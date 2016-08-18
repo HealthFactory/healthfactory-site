@@ -1,0 +1,2 @@
+- éviter de proposer des solutions dont personnes ne veut
+- soumettre des idées, des prototypes aux utilisateurs dès la première itération et analyser les retours utilisateurs pour rester au plus près des attentes et comprendre le besoin

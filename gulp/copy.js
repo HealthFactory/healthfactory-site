@@ -23,8 +23,9 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
       path.join(dirs.source, '**/*'),
       '!' + path.join(dirs.source, '{**/\_*,**/\_*/**}'),
       '!' + path.join(dirs.source, '**/*.njk'),
-      '!' + path.join(dirs.source, 'README.md')
-    ])
+      '!' + path.join(dirs.source, 'README.md'),
+      (args.production)?'':'!'+ path.join(dirs.source, '\.htaccess')
+    ], {dot: true})
     .pipe(plugins.transform(checkRobots))
     .pipe(plugins.changed(dest))
     .pipe(gulp.dest(dest));
