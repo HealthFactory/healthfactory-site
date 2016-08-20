@@ -3,7 +3,7 @@
     <div class="center_page">
         {% if class == 'home' %}
         <div class="titre">
-            <h2>{{'L\'équipe' | i18n('equipe')}}</h2>
+            <h2>{{"L'équipe" | i18n()}}</h2>
             <h3></h3>
         </div>
         {% endif %}
@@ -26,9 +26,9 @@
             {{ teamMember('LUC SIROIS', 'luc-sirois.jpg', 'ADVISER', null, 3) }}
             {{ teamMember('FRÉDÉRIC GRABLI', 'frederic-grabli.jpg', 'MD / ADVISER', null, 3) }}
             <div class="clearfix"></div>
-            {% if class == 'home' %}
+            {% if not production %}
             <div class="action">
-                <a href="team.html" class="btn" data-text="{{'Voir toute l\'équipe' | i18n('voir-equipe')}}" title="{{'Voir toute l\'équipe' | i18n('voir-equipe')}}"><span>{{'Voir toute l\'équipe' | i18n('voir-equipe')}}</span></a>
+                <a href="team.html" class="btn"><span>{{ "Voir toute l'équipe" | i18n()}}</span></a>
             </div>
             <div class="clearfix"></div>
             {% endif %}

@@ -15,20 +15,16 @@
         <div class="nav-header-c">
             <nav class="nav-header">
                 <ul>
-                    {{ menu('A propos', 'concept') }}
-                    {{ menu('Innovation & expertise', 'innovation') }}
-                    {{ menu('Méthodologie', 'metho') }}
+                    {{ menu('innovate-or-die', 'concept') }}
+                    {{ menu('expertise', 'innovation') }}
+                    {{ menu('Process', 'metho') }}
                     {{ menu('L\'offre INSIDERS', 'offre') }}
                     {{ menu('L\'équipe', 'equipe') }}
                     {{ menu('Contact', 'contact') }}
                 </ul>
             </nav>
 
-            <div class="select-lang">
-                <ul>
-                    <li class="active">fr</li>
-                </ul>
-            </div>
+            {% include '_modules/lang-menu.njk' %} 
 
         </div>
         <div class="clearfix"></div>

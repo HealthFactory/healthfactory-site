@@ -694,7 +694,7 @@ header .select-lang ul li.active {
         line-height: 26px;
     }
     p {
-        font-weight: bold;
+        //font-weight: bold;
     }
     li::before {
         content: '_ ';
@@ -1153,9 +1153,9 @@ p a {
 
 #paralax h2 {
     font-family: 'Geomanist-Medium';
-    font-size: 45px;
+    font-size: 34px;
     padding: 0px 40px;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.3em;
     line-height: 70px;
     text-transform: uppercase;
 }
@@ -1264,7 +1264,7 @@ p a {
     padding: 0px;
     margin: 0px;
     height: 770px;
-    background: url('/images/health-factory-locations.jpg') no-repeat center;
+    background: url('/images/health-factory-locations.png') no-repeat center;
     background-size: cover;
     .center_page {
         position: absolute;
@@ -1581,7 +1581,7 @@ a[href^="https://maps.google.com/maps"] {
 
 /* OFFRE */
 
-#offre {
+#offre, #startups {
     background-color: #f1f3f5;
 }
 

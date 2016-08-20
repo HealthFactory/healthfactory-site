@@ -1,0 +1,14 @@
+<div class="select-lang">
+    <ul>
+        {% for lang in config.languages %}
+        {% if __locale__ == lang %}
+        <li class="active">{{lang}}</li>
+        {% endif %}
+        {% endfor %}
+        {% for lang in config.languages %}
+        {% if __locale__ != lang %}
+        <li><a href="/{{lang if lang != 'fr' else ''}}">{{lang}}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>

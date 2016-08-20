@@ -57,7 +57,6 @@
     "minimist": "~1.2.0",
     "mocha": "~2.3.4",
     "nunjucks": "2.4.2",
-    "nunjucks-i18n": "^2.0.0",
     "phantomjs": "~1.9.19",
     "vinyl-buffer": "~1.0.0",
     "vinyl-source-stream": "~1.1.0",
@@ -92,6 +91,10 @@
       "js": "main**.js",
       "css": "main**.{sass,scss}"
     },
-    "maps": false
+    "maps": false,
+    "languages": [
+      "fr",
+      "en"
+    ]
   }
 }
