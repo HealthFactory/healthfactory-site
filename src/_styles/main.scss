@@ -646,6 +646,18 @@ header .select-lang ul li.active {
 
 /* CONCEPT */
 
+.section {
+    ul {
+        font-family: 'Roboto';
+        font-size: 14px;
+        line-height: 16px;
+        //list-style: square inside;
+    }
+    li::before {
+        content: '_ ';
+    }
+}
+
 .section .liste_articles .article_right .titre h2,
 .section .liste_articles .article_left .titre h2 {
     margin: 60px 0px 10px 10px;
@@ -685,19 +697,11 @@ header .select-lang ul li.active {
 }
 
 .section .liste_articles .content {
-    p,
-    li {
+    p {
         line-height: 26px;
         font-family: 'Roboto';
         color: #868686;
         margin: 0px;
-        line-height: 26px;
-    }
-    p {
-        //font-weight: bold;
-    }
-    li::before {
-        content: '_ ';
     }
 }
 
@@ -836,10 +840,11 @@ p a {
 
 .section .article_grid_2 .content p {
     text-align: left;
-    color: #868686;
+    //color: #868686;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 18px;
     font-family: 'Roboto';
+    font-weight: bold;
 }
 
 

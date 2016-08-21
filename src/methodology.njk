@@ -13,35 +13,45 @@
 
     {% from '_modules/article.njk' import articleGrid2 %} 
     {% from '_modules/article.njk' import article %} 
-<section id="articles-grid" class="section">
+
+<section id="articles-grid" class="section section_grey">
     <div class="center_page">
         <div class="content animate-v-c">
-	        <div class="liste_articles_grid_2 animate-v-c">
+            <div class="liste_articles_grid_2 animate-v-c">
 
-                {{ articleGrid2('RECHERCHE', 'recherche', 'visuel.jpg') }}
+                {{ articleGrid2('RECHERCHE', 'recherche', 'methodology-search.jpg') }}
 
-                {{ articleGrid2('VALIDATION', 'validation', 'visuel.jpg') }}
+                {{ articleGrid2('VALIDATION', 'validation', 'methodology-validation.jpg') }}
 
-	        </div>
-	    </div>
+            </div>
+        </div>
         <div class="content animate-v-c">
-	        <div class="liste_articles_grid_2 animate-v-c">
+            <div class="liste_articles_grid_2 animate-v-c">
 
-                {{ articleGrid2('CRÉATION', 'creation', 'visuel.jpg') }}
+                {{ articleGrid2('CRÉATION', 'creation', 'methodology-creation.jpg') }}
 
-                {{ articleGrid2('EXECUTION', 'execution', 'visuel.jpg') }}
+                {{ articleGrid2('EXECUTION', 'execution', 'methodology-execution.jpg') }}
 
-	        </div>
-	    </div>
-        <div class="clearfix"></div>
-            <div class="liste_articles">
-                {{ article('ITÉRATION', 'iteration', 'visuel.jpg') }}
-
-                {{ article('OBJECTIF', 'objectif', 'visuel.jpg', null, null, null, 'left') }}
             </div>
             <div class="clearfix"></div>
         </div>
-    </section>
+    </div>
+</section>
+<section class="section">
+    <div class="center_page">
+        <div class="titre">
+            <h3>{{ "Méthodologie" | i18n() }}</h3>
+        </div>
+        <div class="content animate-v-c">
+            <div class="liste_articles">
+                {{ article('ITÉRATION', 'iteration', 'methodology-iteration.jpg') }}
+
+                {{ article('OBJECTIF', 'objectif', 'methodology-product-market-fit.jpg', null, null, null, 'left') }}
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
 
 </div>
 {% endblock %}
