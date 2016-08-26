@@ -31,7 +31,7 @@ module.exports = function (gulp, plugins, args, config, taskTarget, browserSync)
   });
 
   gulp.task('sftp', function () {
-    return gulp.src([path.join(taskTarget,'/**'), !path.join(taskTarget, '\.DS_Store')], {dot: true})
+    return gulp.src([path.join(taskTarget,'/**'),  '!'+path.join(taskTarget, '\.DS_Store')], {dot: true})
       .pipe(plugins.changed('.'+taskTarget, {hasChanged: plugins.changed.compareSha1Digest}))
       .pipe(gulp.dest('.'+taskTarget))
       .pipe(plugins.sftp({
