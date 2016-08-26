@@ -20,15 +20,18 @@
     <section id="articles-grid" class="section">
         <div class="center_page">
             <div class="titre">
-                <h2>CIBLER DES MARCHÉS</h2>
-                <h3>3 THÉMATIQUES</h3>
+                <h2>{{ "CIBLER DES MARCHÉS" | i18n() }}</h2>
+                <h3>{{ "4 THÉMATIQUES" | i18n() }}</h3>
             </div>
             <div class="content animate-v-c">
+                {% from '_modules/article.njk' import articleGrid %}
                 <div class="liste_articles_grid_1 animate-v-c">
-                    {% from '_modules/article.njk' import articleGrid %}
-                    {{ articleGrid('PARCOURS DE SOINS', 'thematique1', 'visuel.jpg') }}
-                    {{ articleGrid('MALADIES CHRONIQUE', 'thematique2', 'visuel.jpg') }}
-                    {{ articleGrid('COORDINATION DES SOINS', 'thematique3', 'visuel.jpg') }}
+                    {{ articleGrid('dis moi où tu as mal je te dirais qui tu es', 'thematique1', 'digital-health-challenges-topic-1.jpg') }}
+                    {{ articleGrid('(r)assure-moi', 'thematique2', 'digital-health-challenges-topic-2.jpg') }}
+                </div>
+                <div class="liste_articles_grid_1 animate-v-c">
+                    {{ articleGrid('toi aussi un jour tu seras vieux', 'thematique3', 'digital-health-challenges-topic-3.jpg') }}
+                    {{ articleGrid('au delà du médicament', 'thematique4', 'digital-health-challenges-topic-4.jpg') }}
                 </div>
             </div>
             <div class="clearfix"></div>
