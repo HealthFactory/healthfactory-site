@@ -1,0 +1,2 @@
+- don't build something nobody wants
+- suggest ideas and prototypes to users at first itertation and analyze feedbacks to be always attentive to users problems and understant their needs

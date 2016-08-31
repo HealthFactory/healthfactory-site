@@ -1,0 +1,2 @@
+ - a collaborative approach to explore opportunities of new business models and optimize existing ones
+ - ideation workshops in co-design and co-creation follow up by experts designers in healthcare 

@@ -1,0 +1,3 @@
+ - beyond first prototype excubation is the efficient way to build the product by following cycles of short iterations to test the market and find a product / market fit
+ - you have to install a new approach outside the existing process but stay in touch with them to prepare company to digital transformation
+ - as same as a startup that have to deal with investors, excubation define a ROI validation process iteratively to the top management and involve them to help obtain required resources to finalize 

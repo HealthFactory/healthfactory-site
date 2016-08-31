@@ -22,11 +22,10 @@
             <div class="clearfix"></div>
         </div>
         <div class="content animate-v-c">
-            {{ teamMember('JACQUES MARESCAUX', 'jacques-marescaux.jpg', 'MD / ADVISER', null, 3) }}
-            {{ teamMember('LUC SIROIS', 'luc-sirois.jpg', 'ADVISER', null, 3) }}
-            {{ teamMember('FRÉDÉRIC GRABLI', 'frederic-grabli.jpg', 'MD / ADVISER', null, 3) }}
+            {{ teamMember('JACQUES MARESCAUX', 'jacques-marescaux.jpg', 'MD / ADVISER', null) }}
+            {{ teamMember('LUC SIROIS', 'luc-sirois.jpg', 'ADVISER', null) }}
             <div class="clearfix"></div>
-            {% if not production %}
+            {% if not production and not class == 'page' %}
             <div class="action">
                 <a href="team.html" class="btn"><span>{{ "Voir toute l'équipe" | i18n()}}</span></a>
             </div>

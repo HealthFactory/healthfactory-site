@@ -1,2 +1,2 @@
  - une approche méthodique et collaborative pour explorer les opportunités de nouveaux modèles économique et d’optimisation des processus existants 
- - des ateliers d’idéation, de co-concetion et de co-création accompagnés par des designers experts et spécialiste dans la santé
+ - des ateliers d’idéation, de co-conception et de co-création accompagnés par des designers experts et spécialiste dans la santé

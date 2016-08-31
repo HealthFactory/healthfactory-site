@@ -1,0 +1,3 @@
+### Immersions have 2 goals that give to **healthcare and digital stakeholders** a way to collaborate and find **together** innovative solutions to healthcare issues :
+ - understand healthcare issues throw observations on the field and during daily job of health professionals and daily life of patients
+ - understand digital technologies throw collaborations on projects to build solutions on problems
