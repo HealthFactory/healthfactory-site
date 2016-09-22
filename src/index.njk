@@ -15,7 +15,7 @@
             <div class="logo_txt">go beyond ideas</div>
         </div>
 
-        <div class="mh mhl mh1"><span class="scrollto shuffle" data-target="concept">{{ 'Innover ou mourir' | i18n('innovate-or-die') }}</span></div>
+        <div class="mh mhl mh1"><span class="scrollto shuffle" data-target="concept">{{ 'Innover ou mourir' | i18n() }}</span></div>
         <div class="mh mhl mh2"><span class="scrollto shuffle" data-target="innovation">{{ 'Expertise' | i18n() }}</span></div>
         <div class="mh mhl mh3"><span class="scrollto shuffle" data-target="metho">{{ 'Process' | i18n() }}</span></div>
         <div class="mh mhr mh4"><span class="scrollto shuffle" data-target="offre">{{ 'L\'offre INSIDERS' | i18n() }}</span></div>
@@ -36,7 +36,7 @@
                     <div class="slide-content">
                         <div class="center-v-c">
                             <div class="center-v animate-txt">
-                                <div class="title">{{ 'INNOVER OU MOURIR' | i18n('innovate-or-die') }}</div>
+                                <div class="title">{{ 'Innover ou mourir' | i18n() }}</div>
                                 <div class="text">
                                     <p>{{'innovate-or-die-content' | i18n('innovate-or-die-content')}}</p>
                                 </div>
@@ -138,11 +138,9 @@
                         </h4>
                         <p class="animate-v">{{ "évènements et voyages apprenants pour <u>acculturer</u> acteurs de la santé au numérique et permettant aux acteurs
                             du numérique de comprendre les enjeux de la santé<br><br>" | i18n('immersive-experience-content') }}</p>
-                        {% if not production %}
                         <div class="action">
                             <a href="experience-immersive.html" class="btn" title="">{{ 'En savoir plus' | i18n('know-more') }}</a>
                         </div>
-                        {% endif %}
                     </div>
                 </div>
                 <div class="col_3 animate-v">
@@ -152,11 +150,9 @@
                         <p class="animate-v">{{ "offre de services pour réaliser et accompagner des projets innovants en santé avec les meilleurs experts
                             du domaine de la santé et du numérique sur le plan <u>technique</u>, <u>légal</u>, <u>médical</u>, <u>entrepreneurial</u> et
                             <u>design</u>" | i18n('health-digital-expertise-content') }}</p>
-                        {% if not production %}
                         <div class="action">
                             <a href="expertise-health-digital.html" class="btn" title="">{{ 'En savoir plus' | i18n('know-more') }}</a>
                         </div>
-                        {% endif %}
                     </div>
                 </div>
                 <div class="col_3 animate-v">
@@ -166,11 +162,9 @@
                         <p class="animate-v">{{ "plateforme physique (unité de soins, officine, cabinet, patients, …) et numérique (jeux de données, services,
                             API…) permettant de <u>tester et valider des innovations en réel</u> en partenariat avec les acteurs de
                             la santé" | i18n('experiment-on-the-field-content') }}</p>
-                        {% if not production %}
                         <div class="action">
                             <a href="platform-experimentation.html" class="btn" title="">{{ 'En savoir plus' | i18n('know-more') }}</a>
                         </div>
-                        {% endif %}
                     </div>
                 </div>
                 <div class="clearfix"></div>
@@ -319,12 +313,10 @@
                     </div>
                 </div>
 
-                {% if not production %}
                 <div class="action" style="text-align: center; margin-top: 50px;">
                     <a href="services-innovation-health.html" class="btn">services</a>
                     <a href="animate-innovation-health.html" class="btn">events</a>
                 </div>
-                {% endif %}
             </div>
     </section>
 

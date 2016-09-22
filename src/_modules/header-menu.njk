@@ -2,7 +2,7 @@
 {% if class == 'home' %}
 <li><span class="scrollto" data-target="{{anchorName}}" title="">{{title | i18n(title)}}</span></li>
 {% else %}
-<li><a href="/#{{anchorName}}">{{title | i18n(title)}}</a></li>
+<li><a href="/{{ '' if __locale__ == 'fr' else __locale__+'/'}}#{{anchorName}}">{{title | i18n(title)}}</a></li>
 {% endif %}
 {% endmacro %}
 
@@ -15,7 +15,7 @@
         <div class="nav-header-c">
             <nav class="nav-header">
                 <ul>
-                    {{ menu('innovate-or-die', 'concept') }}
+                    {{ menu('Innover ou mourir', 'concept') }}
                     {{ menu('expertise', 'innovation') }}
                     {{ menu('Process', 'metho') }}
                     {{ menu('L\'offre INSIDERS', 'offre') }}

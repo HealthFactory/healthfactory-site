@@ -924,7 +924,8 @@ $(function() {
         var image = $(this);
         var container = image.parent();
         container.css({
-            backgroundImage: 'url("' + image.attr('src') + '")'
+            backgroundImage: 'url("' + image.attr('src') + '")',
+            backgroundSize: 'cover'
         });
         image.css({
             'opacity': 0,

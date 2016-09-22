@@ -2,7 +2,7 @@
     "siteDescription": "Issue is about lining healthcare and digital stakeholders up to find all together innovative solutions. Big pharma, health industry, IoT industry, insurer, hospital, health establishment, health professional, health startups, our mission is to help you find and build new business models and optimize existing ones",
     "siteName": "Health Factory",
     "citation": "« The only source of knowledge is experience. Everything else is just information »",
-    "innovate-or-die": "Innovate or die",
+    "Innover ou mourir": "Innovate or die",
     "L'offre INSIDERS": "INSIDERS offer",
     "team": "team",
     "innovate-or-die-content": "Healthcare is the domain which could benefit most of innovations and new technologies. Become the one who will improve patient's life and medical's practices with digital. Adopt an efficient innovation strategy with Health Factory.",
@@ -33,6 +33,7 @@
     "experiment-on-the-field-content": "physical platform (hospital unit, pharmacy, GP offices, patient’s home, ...) and digital platform (API, services, datasets, ...) to <u>test and measure feedback to validate innovations on the field</u> with healthcare stakeholders",
     "experience-immersive": "events and learning expeditions to <u>acculturate</u> healthcare stakeholders to digital and help digital experts to better understand healthcare needs",
     "expertise-sante-numerique": "panel of services to realize projects with innovative technologies with the best experts on <u>technical</u>, <u>legal</u>, <u>medical</u>, <u>entrepreneurial</u> and <u>design</u> aspects",
+    "plateforme d'expérimentation": "experimentation platform",
     "plateforme-experimentation": "physical platform (hospital unit, pharmacy, GP offices, patient’s home, ...) and digital platform (API, services, datasets, ...) to <u>test and measure feedback to validate innovations on the field</u> with healthcare stakeholders",
     "sebastien-letelie": "Developer and entrepreneur, professional hacker in healthcare to boost innovations in this domain. Sebastien is in healthcare for more than 15 years and he has devoloped many innovative softwares. He's speaker on digital health and innovation strategy. <br><a href='http://twitter.com/sebmade' target='blank'>@sebmade</a>",
     "franck-ohrel": "Serial entrepreneur and investor in digital.<br> Digital transformation and innovation strategy consultant for 20 years.<br><a href='http://twitter.com/franckohrel' target='blank'>@FranckOhrel</a>",
@@ -136,5 +137,9 @@
     "Préparation au Hacking Health Camp": "Hacking Health Camp preparation",
     "Autonomie des patients diabétiques": "diaetes patient autonomy",
     "Communauté de patient": "patient community",
-    "DES SERVICES DÉDIÉS À L'INNOVATION": "INNOVATION DEDICATED SERVICES"
+    "DES SERVICES DÉDIÉS À L'INNOVATION": "INNOVATION DEDICATED SERVICES",
+    "sur le terrain": "on the field",
+    "plateforme physique": "human platform",
+    "plateforme virtuelle": "digital platform",
+    "UNE MÉTHODOLOGIE<br>ITÉRATIVE ET COLLABORATIVE": "collaborative and iterative<br>methodology"
 }
